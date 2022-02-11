@@ -1,10 +1,10 @@
-Git Cheat Sheet
-===================
+# Git Cheat Sheet
 
-- - - - 
+---
+
 # Config
 
-## List your config ##
+## List your config
 
     $ git config --list
 
@@ -38,6 +38,12 @@ Git Cheat Sheet
 
     $ git status
 
+# Log
+
+## History of commits of the repo
+
+    $ git log
+
 # Add
 
 ## Add all modified files to the next commit
@@ -63,3 +69,47 @@ Git Cheat Sheet
 ## Add & Commit all modified files
 
     $ git commit -a -m "[descriptive message]"
+
+# Remote
+
+## Link your local code to remote repository
+
+    $ git remote add origin [url]
+
+## Lists remote repositories you have link to your project
+
+    $ git remote
+
+### Also provide the URL
+
+    $ git remote -v
+
+# Push
+
+## First push
+
+    $ git push origin master -u
+
+## Others
+
+    $ git push
+
+# Pull
+
+## Combines fetch & merge
+
+    $ git pull
+
+### **Side note:** Will fail if your directory has uncommited changes
+
+# Fetch
+
+## Fetch the lastest changes to local repo
+
+    $ git fetch
+
+# Merge
+
+### origin/master being the brench to merge on top of the local code
+
+    $ git merge origin/master
